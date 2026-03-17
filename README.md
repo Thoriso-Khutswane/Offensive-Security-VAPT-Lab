@@ -64,11 +64,11 @@ The project follows a simplified **VA-PT lifecycle**:
 
 # Web Application Penetration Testing
 
-Target: **DVWA Web Application**
+Target: **DVWA Web Application** hosted on metasploitable2 which is also the operating system that is exploited in this project.
 
 Attack Method: Brute Force Authentication Attack
 
-Tools Used: Kali, Burp Suite Intruder, Firefox
+Tools Used: Kali Linux, Burp Suite & Firefox 
 
 ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/13IntruderAttack1Window.png)
 
