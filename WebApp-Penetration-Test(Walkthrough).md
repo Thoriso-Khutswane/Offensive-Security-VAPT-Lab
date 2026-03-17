@@ -30,11 +30,11 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 
    ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/3BurpsuiteProxyIntercept.png)
 
--  Next, I accessed the DVWA web application using Firefox. In the browser’s address bar, I entered the URL http://192.168.56.102/dvwa, which directed me to the DVWA login page. I logged in using the default credentials—username: admin and password: password—and selected “Login.”
+-  Next, I accessed the DVWA web application using Firefox. In the browser’s address bar, I entered the URL http://192.168.56.102/dvwa, which directed me to the DVWA login page. I logged in using the default credentials—username: admin and password: password—and selected “Login.” You can login using wrong credentials is still fine
   
 **Note:** The IP address 192.168.56.102 is the local address of the Metasploitable2 machine, which serves as the host for the DVWA web application.
 
- ![bar plot]()
+ ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/4DVWALogin.png)
 
 - After completing the previous step, I noticed that the login request page continued to load without progressing. This occurred because the proxy intercept was still enabled. When I checked Burp Suite, I could see the raw request data that had been captured during the login attempt. This confirmed that Burp Suite was successfully configured to function as a proxy between the server side and the client side of the web application.
 Results:
