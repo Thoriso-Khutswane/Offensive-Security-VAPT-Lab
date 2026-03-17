@@ -25,7 +25,7 @@ The penetration testing environment was implemented using **Oracle VirtualBox**.
 
 ## Target Systems
 
-* Metasploitable2 (vulnerable operating system(also used to host the DVWA))
+* Metasploitable2 (vulnerable operating system,also used to host the DVWA)
 * DVWA (Damn Vulnerable Web Application)
 
 Both systems were downloaded and installed in the Oracle Virtual Box
