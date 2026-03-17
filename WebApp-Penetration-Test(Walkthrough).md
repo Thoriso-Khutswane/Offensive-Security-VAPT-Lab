@@ -46,7 +46,7 @@ The captured output clearly shows that Burp Suite intercepted the login request.
 
 - I then right‑clicked on the raw data window that Burp Suite captured earlier and selected “Send to Intruder,” as shown in the figure below.
 
-   ![bar plot]()
+   ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/6SendingTheRawdataToAnIntruder.png)
   
 ### Step 4 :Configure Intruder Attack 
 
