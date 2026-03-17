@@ -10,7 +10,7 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 
 1. In the Firefox menu, I selected Preferences, as shown in the figure below.
 
-   ![bar plot]()
+   ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/1FirefoxPreferences.png)
 
 2. In the Preferences search bar, I searched for the word ‘Proxy’ and then selected the result labeled ‘Network Settings’, as shown in the figure below.
 
