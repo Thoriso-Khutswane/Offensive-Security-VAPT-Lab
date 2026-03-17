@@ -14,7 +14,7 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 
 2. In the Preferences search bar, I searched for the word ‘Proxy’ and then selected the result labeled ‘Network Settings’, as shown in the figure below.
 
-    ![bar plot]()
+    ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/2NavigatingToFirefoxNetworkSettings.png)
 
 3. On the Network Settings page, I selected “Manual proxy configuration.” I then entered 127.0.0.1 as the HTTP proxy, which is the localhost address where Burp Suite runs on port 8080. I made sure to check the option “Also use this proxy for FTP and HTTPS” and then clicked “OK” to complete the configuration, This allows Burp Suite to intercept all HTTP requests.
    
