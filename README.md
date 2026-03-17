@@ -70,21 +70,13 @@ Attack Method:
 
 * Brute Force Authentication Attack
 
-Tool Used:
+Tools Used: Kali, Burp Suite Intruder,Firefox
 
-* Burp Suite Intruder
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/13IntruderAttack1Window.png)
 
-📷 **Insert screenshots**
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/14BruteforceSuccesful.png)
 
-Examples:
 
-```
-WebApp-Penetration-Test/screenshots/burp_proxy.png
-WebApp-Penetration-Test/screenshots/login_request.png
-WebApp-Penetration-Test/screenshots/bruteforce_results.png
-```
-
----
 
 # Operating System Penetration Testing
 
