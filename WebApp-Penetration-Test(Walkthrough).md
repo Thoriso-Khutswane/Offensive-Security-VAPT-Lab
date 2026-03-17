@@ -52,15 +52,15 @@ The captured output clearly shows that Burp Suite intercepted the login request.
 
 - Next, I selected “Intruder” in Burp Suite. Under the Intruder panel, I chose “2” and then selected “Positions.” In the Positions tab, I could see the full request that I had sent to Intruder. The highlighted sections indicate the values that can be targeted for brute‑forcing. To remove unnecessary highlighted fields, I selected the “Clear” button on the right‑hand side, as shown in the figure below.
 
- ![bar plot]()
+ ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/7Intruder2PositionTab.png)
 
 - While in **Intruder → 2 → Positions**, I selected “Cluster bomb” as the attack type. The **Cluster Bomb** attack method tests all possible combinations of the payloads. In this setup, the first payload corresponds to the username, and the second payload corresponds to the password. Burp Suite will systematically try every username–password combination. 
 
-   ![bar plot]()
+   ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/8SettingTheAttackTypeToClusterBomb.png)
 
 - Next, I highlighted the values that I intended to brute‑force—specifically, the username field and the password field. After selecting each value, I clicked “Add” to include them as payload positions. This process is shown in the figure below
 
-  ![bar plot]()
+  ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/9AddingUsernameAndPasswordValuesToPayloads.png)
 
 ### Step 5 :Configure Username Payload
 
@@ -68,19 +68,19 @@ The captured output clearly shows that Burp Suite intercepted the login request.
 If needed, Burp Suite also allows uploading an external file containing usernames or passwords, but in this case, I manually entered the values we prepared.
 
 
-  ![bar plot]()
+  ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/10ModifyingThePayloadSetsAndPayloadOptionsForUsernameValue.png)
 
 ### Step 6 :Configure Password Payload
 
 - Next, I set “Payload Set” to 2, which corresponds to the password field. I then added a list of common default passwords—such as pass, password, 1234, and root—to the payload options box.
 
-   ![bar plot]()
+   ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/11ModifyingThePayloadSetsAndPayloadOptionsForThePasswordValue.png)
 
 ### Step 7 :Launch Brute Force Attack
 
 - Selected a button that says, “start attack"
 
-  ![bar plot]()
+  ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/12StartingTheBruteForceAttack.png)
 
 
 ### Step 8 :Successful Authentication
@@ -88,8 +88,8 @@ If needed, Burp Suite also allows uploading an external file containing username
 - After clicking “Start attack,” a pop‑up window titled **“Intruder Attack 1”** appeared. This is where I could determine whether the brute‑force attempt was successful. The table displayed several useful details, and the first thing I noticed was that most of the entries in the Length column were identical. Because of this, I looked for the entry with a different response length—4948—which corresponded to the credentials admin and password.
 I selected that row and then opened the “Response” tab. Under Response, I selected “Render” to view the rendered page and confirm the successful login.
 
-![bar plot]()
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/13IntruderAttack1Window.png)
 
 - After selecting Render, the DVWA welcome page appeared with the message “Welcome to the password‑protected area, admin.” This confirmed that the brute‑force attack was successful and that I had gained access to the application as the admin user. The figure below illustrates the result.
 
-  ![bar plot]()
+  ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/14BruteforceSuccesful.png)
