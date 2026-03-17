@@ -20,7 +20,7 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
    
   - In computer networking, a proxy server acts as an intermediary between a client requesting a resource and the server providing that resource. In this setup, I used Burp Suite as the intermediary between the web server and myself as the tester.
     
-  ![bar plot]()
+  ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/ModifyNetworkSettings.png)
 
 ### Step 2 : Intercept Login Request
     
