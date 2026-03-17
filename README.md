@@ -66,11 +66,9 @@ The project follows a simplified **VA-PT lifecycle**:
 
 Target: **DVWA Web Application**
 
-Attack Method:
+Attack Method: Brute Force Authentication Attack
 
-* Brute Force Authentication Attack
-
-Tools Used: Kali, Burp Suite Intruder,Firefox
+Tools Used: Kali, Burp Suite Intruder, Firefox
 
 ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/13IntruderAttack1Window.png)
 
