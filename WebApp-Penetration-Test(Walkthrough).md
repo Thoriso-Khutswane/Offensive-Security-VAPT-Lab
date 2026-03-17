@@ -40,7 +40,7 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 Results:
 The captured output clearly shows that Burp Suite intercepted the login request. The raw data contains the username and password I entered on the DVWA login page, demonstrating that the proxy configuration between Burp Suite and Firefox was successful.
 
- ![bar plot]()
+ ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/5RawData.jpg)
 
 ### Step 3 :Send Request to Burp Intruder
 
