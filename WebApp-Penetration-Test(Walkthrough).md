@@ -28,7 +28,7 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 
 -  To do this, I started Burp Suite on my Linux machine. Inside Burp Suite, I selected the “Proxy” tab, then opened “Intercept.” I made sure that “Intercept is on” before proceeding.
 
-   ![bar plot]()
+   ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/WebApp-VAPT-Images/3BurpsuiteProxyIntercept.png)
 
 -  Next, I accessed the DVWA web application using Firefox. In the browser’s address bar, I entered the URL http://192.168.56.102/dvwa, which directed me to the DVWA login page. I logged in using the default credentials—username: admin and password: password—and selected “Login.”
   
