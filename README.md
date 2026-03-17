@@ -32,6 +32,8 @@ The penetration testing environment was implemented using **Oracle VirtualBox**.
 
 # Lab Architecture
 
+ExecutiveOverview.png
+
 ![bar plot](https://raw.githubusercontent.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/main/ExecutiveOverview.png)
 
 
