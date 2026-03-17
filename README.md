@@ -6,8 +6,8 @@ This repository documents the practical implementation of my **Honours Research 
 
 The project focuses on performing **Vulnerability Assessment and Penetration Testing (VA-PT)** on both:
 
-* Web Applications
-* Operating Systems
+-  Web Application
+-  Operating System
 
 The experiments were conducted in a **controlled virtual penetration testing lab environment** using intentionally vulnerable systems.
 
