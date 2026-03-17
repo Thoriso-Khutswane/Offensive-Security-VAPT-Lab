@@ -32,27 +32,8 @@ The penetration testing environment was implemented using **Oracle VirtualBox**.
 
 # Lab Architecture
 
-📷 **Insert Architecture Diagram Here**
 
-Example:
-
-```
-Attacker Machine (Kali Linux)
-        |
-        |  Virtual Network
-        |
-Target Server (Metasploitable2)
-        |
-        └── DVWA Web Application
-```
-
-Screenshot to include:
-
-```
-Architecture/lab-architecture.png
-```
-
----
+https://raw.githubusercontent.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/main/Images/Lab%20Architecture.drawio.png
 
 # Tools Used
 
