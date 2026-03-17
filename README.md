@@ -32,7 +32,7 @@ The penetration testing environment was implemented using **Oracle VirtualBox**.
 
 # Lab Architecture
 
-Images/LabArchitecture.png
+Images/Images/Picture1.jpg
 
 
 # Tools Used
