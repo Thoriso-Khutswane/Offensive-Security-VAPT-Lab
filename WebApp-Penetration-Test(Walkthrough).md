@@ -16,12 +16,46 @@ To configure Firefox to work with Burp Suite, I first needed to adjust the brows
 
     ![bar plot]()
 
-3. On the Network Settings page, I selected “Manual proxy configuration.” I then entered 127.0.0.1 as the HTTP proxy, which is the localhost address where Burp Suite runs on port 8080. I made sure to check the option “Also use this proxy for FTP and HTTPS” and then clicked “OK” to complete the configuration, as shown in the figure below.
+3. On the Network Settings page, I selected “Manual proxy configuration.” I then entered 127.0.0.1 as the HTTP proxy, which is the localhost address where Burp Suite runs on port 8080. I made sure to check the option “Also use this proxy for FTP and HTTPS” and then clicked “OK” to complete the configuration, This allows Burp Suite to intercept all HTTP requests.
    
-In computer networking, a proxy server acts as an intermediary between a client requesting a resource and the server providing that resource. In this setup, I used Burp Suite as the intermediary between the web server and myself as the tester.
-
+  - In computer networking, a proxy server acts as an intermediary between a client requesting a resource and the server providing that resource. In this setup, I used Burp Suite as the intermediary between the web server and myself as the tester.
     
-   
+  ![bar plot]()
 
+### Step 2 : Intercept Login Request
+    
+1. I used Burp Proxy to intercept the authentication request sent to the server. 
 
-   
+-  To do this, I started Burp Suite on my Linux machine. Inside Burp Suite, I selected the “Proxy” tab, then opened “Intercept.” I made sure that “Intercept is on” before proceeding.
+
+   ![bar plot]()
+
+-  Next, I accessed the DVWA web application using Firefox. In the browser’s address bar, I entered the URL http://192.168.56.102/dvwa, which directed me to the DVWA login page. I logged in using the default credentials—username: admin and password: password—and selected “Login.”
+  
+**Note:** The IP address 192.168.56.102 is the local address of the Metasploitable2 machine, which serves as the host for the DVWA web application.
+
+ ![bar plot]()
+
+- After completing the previous step, I noticed that the login request page continued to load without progressing. This occurred because the proxy intercept was still enabled. When I checked Burp Suite, I could see the raw request data that had been captured during the login attempt. This confirmed that Burp Suite was successfully configured to function as a proxy between the server side and the client side of the web application.
+Results:
+The captured output clearly shows that Burp Suite intercepted the login request. The raw data contains the username and password I entered on the DVWA login page, demonstrating that the proxy configuration between Burp Suite and Firefox was successful.
+
+ ![bar plot]()
+
+### Step 3 :Send Request to Burp Intruder
+
+- I then right‑clicked on the raw data window that Burp Suite captured earlier and selected “Send to Intruder,” as shown in the figure below.
+
+   ![bar plot]()
+  
+### Step 4 :Configure Intruder Attack 
+
+- Next, I selected “Intruder” in Burp Suite. Under the Intruder panel, I chose “2” and then selected “Positions.” In the Positions tab, I could see the full request that I had sent to Intruder. The highlighted sections indicate the values that can be targeted for brute‑forcing. To remove unnecessary highlighted fields, I selected the “Clear” button on the right‑hand side, as shown in the figure below.
+
+ ![bar plot]()
+
+- While in **Intruder → 2 → Positions**, I selected “Cluster bomb” as the attack type. The Cluster Bomb attack method tests all possible combinations of the payloads. In this setup, the first payload corresponds to the username, and the second payload corresponds to the password. Burp Suite will systematically try every username–password combination. This process is illustrated in the figures below.
+
+   ![bar plot]()
+
+   ![bar plot]()
