@@ -54,8 +54,42 @@ The captured output clearly shows that Burp Suite intercepted the login request.
 
  ![bar plot]()
 
-- While in **Intruder → 2 → Positions**, I selected “Cluster bomb” as the attack type. The Cluster Bomb attack method tests all possible combinations of the payloads. In this setup, the first payload corresponds to the username, and the second payload corresponds to the password. Burp Suite will systematically try every username–password combination. This process is illustrated in the figures below.
+- While in **Intruder → 2 → Positions**, I selected “Cluster bomb” as the attack type. The **Cluster Bomb** attack method tests all possible combinations of the payloads. In this setup, the first payload corresponds to the username, and the second payload corresponds to the password. Burp Suite will systematically try every username–password combination. 
 
    ![bar plot]()
 
+- Next, I highlighted the values that I intended to brute‑force—specifically, the username field and the password field. After selecting each value, I clicked “Add” to include them as payload positions. This process is shown in the figure below
+
+  ![bar plot]()
+
+### Step 5 :Configure Username Payload
+
+- I then navigated to the Payloads tab and set “Payload Set” to 1, which corresponds to the username payload. I selected “Simple list” as the payload type, since I planned to use a basic custom wordlist that I created myself. Under Payload Options, I entered several commonly used default usernames, such as **administrator, admin, root, user, and test**.
+If needed, Burp Suite also allows uploading an external file containing usernames or passwords, but in this case, I manually entered the values we prepared.
+
+
+  ![bar plot]()
+
+### Step 6 :Configure Password Payload
+
+- Next, I set “Payload Set” to 2, which corresponds to the password field. I then added a list of common default passwords—such as pass, password, 1234, and root—to the payload options box.
+
    ![bar plot]()
+
+### Step 7 :Launch Brute Force Attack
+
+- Selected a button that says, “start attack"
+
+  ![bar plot]()
+
+
+### Step 8 :Successful Authentication
+
+- After clicking “Start attack,” a pop‑up window titled **“Intruder Attack 1”** appeared. This is where I could determine whether the brute‑force attempt was successful. The table displayed several useful details, and the first thing I noticed was that most of the entries in the Length column were identical. Because of this, I looked for the entry with a different response length—4948—which corresponded to the credentials admin and password.
+I selected that row and then opened the “Response” tab. Under Response, I selected “Render” to view the rendered page and confirm the successful login.
+
+![bar plot]()
+
+- After selecting Render, the DVWA welcome page appeared with the message “Welcome to the password‑protected area, admin.” This confirmed that the brute‑force attack was successful and that I had gained access to the application as the admin user. The figure below illustrates the result.
+
+  ![bar plot]()
