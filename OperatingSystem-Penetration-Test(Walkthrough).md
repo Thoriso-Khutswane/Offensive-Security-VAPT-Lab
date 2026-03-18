@@ -16,3 +16,21 @@ Target: Metasploitable2. Is an intentionally vulnerable virtual machine designed
                                  nmap -sV -O [target IP]
 
 ![bar plot]()
+
+- The figure above shows the number of open ports detected on the operating system. The table below lists five open ports that are potentially vulnerable.
+
+
+| Port Number | State | Service | Version                                      |
+|-------------|--------|----------|-----------------------------------------------|
+| 21/tcp      | open   | ftp      | vsftpd 2.3.4                                  |
+| 22/tcp      | open   | ssh      | OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0) |
+| 23/tcp      | open   | telnet   | Linux telnetd                                |
+| 24/tcp      | open   | smtp     | Postfix smtpd                                |
+| 25/tcp      | open   | domain   | ISC BIND 9.4.2                               |
+
+
+
+
+
+
+
