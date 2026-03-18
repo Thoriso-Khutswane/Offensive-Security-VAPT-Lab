@@ -88,5 +88,5 @@ Executing this command launched the exploit and created a session with the targe
 
  ![bar plot]() 
 
-In Figure 5.6 above, a session between the operating system and myself (the tester/attacker) has been successfully established, indicating that the exploitation was completed successfully. Since I selected a random open port to exploit, these results support the hypothesis that:
+In the Figure above, a session between the operating system and myself (the tester/attacker) has been successfully established, indicating that the exploitation was completed successfully. Since I selected a random open port to exploit, these results support the hypothesis that:
 “The more open ports a system has, the higher the likelihood of successful attacks.”
