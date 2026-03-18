@@ -57,7 +57,7 @@ Both systems were downloaded and installed in the Oracle Virtual Box
 The project follows a simplified **VA-PT lifecycle**:
 
 1. Information Gathering
-2. Vulnerability Scanning
+2. Vulnerability Scanning(Nessus, Burp Suite, ZAP, & etc. can be utilized)
 3. Attack Development
 4. Exploitation
 5. Result Analysis
@@ -104,6 +104,9 @@ The results revealed several common security weaknesses:
 * Outdated services contain exploitable vulnerabilities
 * Weak authentication mechanisms allow brute force attacks
 
+
+# Results Analysis
+
 # Remediations
 
 **To mitigate the identified webapp vulnerability developers are encouraged to:**
@@ -131,6 +134,8 @@ The results revealed several common security weaknesses:
 - Apply regular patch management
 
 - Restrict access using firewall rules
+
+
 
 # Skills Demonstrated
 
