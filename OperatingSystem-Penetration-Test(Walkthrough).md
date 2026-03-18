@@ -44,3 +44,49 @@ The FTP service was tested using an Nmap script.
 ![bar plot]()
 
 From the results shown in the figure above, I observed that the Nmap script reported the vsftpd service as backdoored, indicating that the version running on port 21 contains the known vulnerability. The output also confirms that the backdoor is exploitable, meaning an attacker could potentially gain unauthorized access through this service.
+
+ - Backdoor Information
+
+| Backdoor Information        | State                    | Disclosure Date |
+|-----------------------------|---------------------------|------------------|
+| vsFTPd version 2.3.4 backdoor | Vulnerable (Exploitable) | 2011‑07‑04       |
+
+
+
+### Step 4 — Exploit using Metasploit
+
+- Now that I had identified a vulnerable service to target, I proceeded to exploit the machine. For this step, I used Metasploit. To launch Metasploit, I opened my Linux terminal and typed the following command:
+
+      msfconsole
+
+This command starts the Metasploit Framework console, which provides access to a wide range of exploitation modules. 
+
+![bar plot]()
+
+### Step 5 — Load Exploit Module
+
+- To gain access to the operating system, I used the Metasploit module specifically designed for exploiting the vsftpd 2.3.4 backdoor. In the Metasploit console, I entered the following command:
+
+      use exploit/unix/ftp/vsftpd_234_backdoor
+  
+ This module targets the vsftpd version 2.3.4 backdoor vulnerability that I previously identified using the Nmap script.
+
+![bar plot]()
+
+Set target host:
+
+    set RHOSTS 192.168.56.102
+
+
+### Step 6 — Shell Access
+
+- The final step was to establish a session with the operating system and complete the exploitation process. To do this, I typed the command:
+
+      run
+  
+Executing this command launched the exploit and created a session with the target machine. Once the session was established, I gained full access to the operating system through the Metasploit command line.
+
+ ![bar plot]() 
+
+In Figure 5.6 above, a session between the operating system and myself (the tester/attacker) has been successfully established, indicating that the exploitation was completed successfully. Since I selected a random open port to exploit, these results support the hypothesis that:
+“The more open ports a system has, the higher the likelihood of successful attacks.”
