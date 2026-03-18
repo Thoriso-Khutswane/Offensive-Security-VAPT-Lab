@@ -15,6 +15,8 @@ Target: Metasploitable2. Is an intentionally vulnerable virtual machine designed
  
                                  nmap -sV -O [target IP]
 
+In this command, -sV enables service version detection, -O enables operating system detection, and [target IP] refers to the server’s IP address,in this case, 192.168.56.102.
+
 ![bar plot]()
 
 - The figure above shows the number of open ports detected on the operating system. The table below lists five open ports that are potentially vulnerable.
@@ -30,7 +32,15 @@ Target: Metasploitable2. Is an intentionally vulnerable virtual machine designed
 
 
 
+### Step 3 — Detect FTP Backdoor
 
+The FTP service was tested using an Nmap script.
 
+- To check whether any of the open ports had a known backdoor associated with it, I focused on the port running the FTP service. Specifically, I examined vsftpd 2.3.4, which is known to have a backdoor vulnerability in certain compromised distributions. To test for this vulnerability, I used the following Nmap script command:
 
+                   nmap --script ftp-vsftpd-backdoor -p 21 [target host]
+  This script checks whether the vsftpd v2.3.4 service on port 21 is backdoored and vulnerable to unauthorized access.
 
+![bar plot]()
+
+From the results shown in the figure above, I observed that the Nmap script reported the vsftpd service as backdoored, indicating that the version running on port 21 contains the known vulnerability. The output also confirms that the backdoor is exploitable, meaning an attacker could potentially gain unauthorized access through this service.
