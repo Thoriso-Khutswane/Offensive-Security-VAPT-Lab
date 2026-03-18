@@ -107,6 +107,8 @@ The results revealed several common security weaknesses:
 
 # Results Analysis
 
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/VA-PT-Dashboard.png)
+
 # Remediations
 
 **To mitigate the identified webapp vulnerability developers are encouraged to:**
