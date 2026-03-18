@@ -107,8 +107,8 @@ The results revealed several common security weaknesses:
 
 # Results Analysis
 
-- I analyzed the results and created a report using Micosoft Power BI(Easy to be understood by non-technical stakeholders)
-
+- Instead of creating a traditional VA‑PT document, I analysed the results and generated a report using Microsoft Power BI. This approach made the findings easier for non‑technical stakeholders to understand and significantly reduced the time required to produce the final report.
+  
 ![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/VA-PT-Dashboard2.png)
 
 # Recommendations
