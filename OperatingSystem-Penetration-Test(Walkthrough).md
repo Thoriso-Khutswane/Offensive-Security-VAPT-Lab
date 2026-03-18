@@ -43,9 +43,7 @@ The FTP service was tested using an Nmap script.
                    nmap --script ftp-vsftpd-backdoor -p 21 [target host]
   This script checks whether the vsftpd v2.3.4 service on port 21 is backdoored and vulnerable to unauthorized access.
 
-![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/OperatingSystem-VAPT-Images/3NmapFTPBackdoorIdentificationScript.jpg
-
-)
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/OperatingSystem-VAPT-Images/3NmapFTPBackdoorIdentificationScript.jpg)
 
 From the results shown in the figure above, I observed that the Nmap script reported the vsftpd service as backdoored, indicating that the version running on port 21 contains the known vulnerability. The output also confirms that the backdoor is exploitable, meaning an attacker could potentially gain unauthorized access through this service.
 
