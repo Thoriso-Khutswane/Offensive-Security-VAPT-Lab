@@ -107,9 +107,11 @@ The results revealed several common security weaknesses:
 
 # Results Analysis
 
-![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/VA-PT-Dashboard.png)
+- I analyzed the results and created a report using Micosoft Power BI(Easy to be understood by non-technical stakeholders)
 
-# Remediations
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/VA-PT-Dashboard2.png)
+
+# Recommendations
 
 **To mitigate the identified webapp vulnerability developers are encouraged to:**
 
