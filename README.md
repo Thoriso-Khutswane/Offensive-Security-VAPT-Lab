@@ -36,7 +36,7 @@ Both systems were downloaded and installed in the Oracle Virtual Box
 # Lab Architecture
 
 
-![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/Architecture.png)
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/LabArchitecture2.png)
 
 
 # Tools Used
