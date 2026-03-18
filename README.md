@@ -106,7 +106,7 @@ The results revealed several common security weaknesses:
 
 # Remediations
 
-To mitigate the identified webapp vulnerability developers are encouraged to:
+**To mitigate the identified webapp vulnerability developers are encouraged to:**
 
 - Enforce strong password policies
 
@@ -120,7 +120,7 @@ To mitigate the identified webapp vulnerability developers are encouraged to:
 
 - Monitor and log authentication attempts
 
-To mitigate the identified vulnerability on the operating system computer networking professionals and system administrators are encouraged to:
+**To mitigate the identified vulnerability on the operating system computer networking professionals and system administrators are encouraged to:**
 
 - Upgrade vsFTPd to a secure version
 
