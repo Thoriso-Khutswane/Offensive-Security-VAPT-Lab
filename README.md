@@ -82,25 +82,18 @@ Tools Used: Kali Linux, Burp Suite & Firefox
 
 Target: **Metasploitable2**
 
-Attack Method:
+Attack Method: FTP Backdoor Exploit
 
-* FTP Backdoor Exploit
+Tools Used: Kali Linux,Nmap, Metasploit
 
-Tools Used:
 
-* Nmap
-* Metasploit
+  - Nmap Scrip-FTP backdoor identification 
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/OperatingSystem-VAPT-Images/3NmapFTPBackdoorIdentificationScript.jpg)
 
-📷 **Insert screenshots**
+- Session succesfully created
+![bar plot](https://github.com/Thoriso-Khutswane/Offensive-Security-VAPT-Lab/blob/main/Images/OperatingSystem-VAPT-Images/6SessionCreated.jpg)
 
-Examples:
 
-```
-OS-Penetration-Test/screenshots/nmap_scan.png
-OS-Penetration-Test/screenshots/metasploit_shell.png
-```
-
----
 
 # Key Findings
 
@@ -111,7 +104,33 @@ The results revealed several common security weaknesses:
 * Outdated services contain exploitable vulnerabilities
 * Weak authentication mechanisms allow brute force attacks
 
----
+# Remediations
+
+To mitigate the identified webapp vulnerability developers are encouraged to:
+
+- Enforce strong password policies
+
+- Implement account lockout after multiple failed attempts
+
+- Add rate limiting
+
+- Use CAPTCHA
+
+- Enable Multi-Factor Authentication (MFA)
+
+- Monitor and log authentication attempts
+
+To mitigate the identified vulnerability on the operating system computer networking professionals and system administrators are encouraged to:
+
+- Upgrade vsFTPd to a secure version
+
+- Remove or disable FTP if not required
+
+- Use secure alternatives (e.g., SFTP)
+
+- Apply regular patch management
+
+- Restrict access using firewall rules
 
 # Skills Demonstrated
 
