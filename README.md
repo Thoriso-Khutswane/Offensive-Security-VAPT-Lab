@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository documents the practical implementation of my Honours Research Project in Computer Science at North‑West University, as well as my three‑month practical work experience at Momentum Group Limited.
+This repository documents the practical implementation of my Honours Research Project in Computer Science at North‑West University, as well as my three‑month practical work experience at Momentum Group Limited as a junior pen-tester.
 
 The project focuses on performing **Vulnerability Assessment and Penetration Testing (VA-PT)** on both:
 
